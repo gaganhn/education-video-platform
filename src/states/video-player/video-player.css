@@ -1,275 +1,4 @@
-<template>
-  <div>
-    <div class="main-content">
-      <div class="wrap">
-        <div class="right-content">
-          <div class="right-content-heading">
-            <div class="right-content-heading-left">
-              <h3>Latest Categories of videos</h3>
-            </div>
-            <div class="right-content-heading-right">
-              <div class="social-icons">
-                <ul>
-                  <li>
-                    <a class="facebook" href="#" target="_blank"></a>
-                  </li>
-                  <li>
-                    <a class="twitter" href="#" target="_blank"></a>
-                  </li>
-                  <li>
-                    <a class="googleplus" href="#" target="_blank"></a>
-                  </li>
-                  <li>
-                    <a class="pinterest" href="#" target="_blank"></a>
-                  </li>
-                  <li>
-                    <a class="dribbble" href="#" target="_blank"></a>
-                  </li>
-                  <li>
-                    <a class="vimeo" href="#" target="_blank"></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="clear"></div>
-          </div>
-          <div class="inner-page">
-            <div class="title">
-              <h3>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.Ut enim ad minim veniam, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore
-              </h3>
-              <ul>
-                <li>
-                  <h4>By:</h4>
-                </li>
-                <li>
-                  <a href="#">Author</a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="../assets/images/sub.png" title="subscribe" />subscribe
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="video-inner">
-              <iframe
-                src="//player.vimeo.com/video/24681824"
-                width="100%"
-                height="500px"
-                frameborder="0"
-                webkitallowfullscreen
-                mozallowfullscreen
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div class="clear"></div>
-            <div class="video-details">
-              <ul>
-                <li>
-                  <p>
-                    Uploaded on
-                    <a href="#">June 21, 2013</a> by
-                    <a href="#">Lorem</a>
-                  </p>
-                </li>
-                <li>
-                  <span>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
-                  </span>
-                </li>
-              </ul>
-            </div>
-            <div class="clear"></div>
-            <div class="tags">
-              <ul>
-                <li>
-                  <h3>Tags:</h3>
-                </li>
-                <li>
-                  <a href="#">Games</a> ,
-                </li>
-                <li>
-                  <a href="#">HD-Videos</a>
-                </li>
-              </ul>
-            </div>
-            <div class="clear"></div>
-            <div class="share-artical">
-              <h3>Also share on</h3>
-              <ul>
-                <li>
-                  <a href="#">
-                    <img src="../assets/images/facebook.png" title="facebook" />Facebook
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="../assets/images/twiter.png" title="Twitter" />Twiiter
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="../assets/images/in.png" title="linked-in" />Linked-in
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="../assets/images/google+.png" title="google+" />Google+
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="../assets/images/pintrest.png" title="pintrest" />Pintrest
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="../assets/images/rss.png" title="rss" />Rss
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="artical-commentbox">
-              <h3>leave a comment</h3>
-              <div class="table-form">
-                <form>
-                  <input
-                    type="text"
-                    class="textbox"
-                    value="Name:"
-                    onfocus="this.value = '';"
-                    onblur="if (this.value == '') {this.value = 'Name';}"
-                  />
-                  <input
-                    type="text"
-                    class="textbox"
-                    value="Email:"
-                    onfocus="this.value = '';"
-                    onblur="if (this.value == '') {this.value = 'Email';}"
-                  />
-                  <input
-                    type="text"
-                    class="textbox"
-                    value="Phone:"
-                    onfocus="this.value = '';"
-                    onblur="if (this.value == '') {this.value = 'Phone';}"
-                  />
-                  <textarea
-                    value="Message:"
-                    onfocus="this.value = '';"
-                    onblur="if (this.value == '') {this.value = 'Message';}"
-                  >Message:</textarea>
-                </form>
-                <a href="#">submit comment</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="clear"></div>
-      </div>
-    </div>
-    <div class="clear"></div>
-  </div>
-</template>
-
-<script>
-export default {
-  name: "video-player",
-  data() {
-    return {};
-  },
-  methods: {}
-};
-</script>
-
-<style scoped>
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-dl,
-dt,
-dd,
-ol,
-nav ul,
-nav li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, nav ul, nav li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -278,36 +7,21 @@ video {
   vertical-align: baseline;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none;
   margin: 0px;
   padding: 0px;
 }
 
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after, q:before, q:after {
   content: "";
   content: none;
 }
@@ -406,9 +120,8 @@ img {
 
 @font-face {
   font-family: "gandhi_sansregular";
-  src: url("../assets/fonts/GandhiSans-Regular-webfont.eot");
-  src: url("../assets/fonts/GandhiSans-Regular-webfont.eot?#iefix") format("embedded-opentype"),
-    url("../assets/fonts/GandhiSans-Regular-webfont.woff") format("woff");
+  src: url("../../assets/fonts/GandhiSans-Regular-webfont.eot");
+  src: url("../../assets/fonts/GandhiSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/GandhiSans-Regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -519,7 +232,7 @@ img {
   width: 40px;
   display: block;
   text-indent: -9999px;
-  background: transparent url(../assets/images/social-icons.png);
+  background: transparent url(../../assets/images/social-icons.png);
 }
 
 .contact-info1 {
@@ -532,8 +245,7 @@ img {
   border-left: 1px solid rgba(231, 231, 231, 0.73);
 }
 
-.social-icons ul li:first-child,
-ol li:first-child {
+.social-icons ul li:first-child, ol li:first-child {
   margin-top: 0px;
 }
 
@@ -560,7 +272,7 @@ ol li:first-child {
   width: 40px;
   display: block;
   text-indent: -9999px;
-  background: transparent url(../assets/images/social-icons.png);
+  background: transparent url(../../assets/images/social-icons.png);
 }
 
 .social-icons a.twitter {
@@ -632,8 +344,7 @@ ol li:first-child {
   display: inline-block;
 }
 
-.title h3,
-.title h4 {
+.title h3, .title h4 {
   color: #888;
   font-family: "gandhi_sansregular";
   font-size: 1em;
@@ -665,8 +376,7 @@ ol li:first-child {
   color: #888;
 }
 
-.video-details p,
-.video-details span {
+.video-details p, .video-details span {
   color: #888;
   font-family: "gandhi_sansregular";
   font-size: 1em;
@@ -852,8 +562,7 @@ ol li:first-child {
   margin: 0px;
 }
 
-.group:before,
-.group:after {
+.group:before, .group:after {
   content: "";
   display: table;
 }
@@ -886,8 +595,7 @@ ol li:first-child {
   padding: 0 1.5%;
 }
 
-.span_2_of_3 h3,
-.span_1_of_3 h3 {
+.span_2_of_3 h3, .span_1_of_3 h3 {
   font-family: "gandhi_sansregular";
   font-weight: 400;
   font-size: 1.2em;
@@ -915,8 +623,7 @@ ol li:first-child {
   font-family: "gandhi_sansregular";
 }
 
-.contact-form input[type="text"],
-.contact-form textarea {
+.contact-form input[type="text"], .contact-form textarea {
   padding: 8px;
   display: block;
   width: 98%;
@@ -971,8 +678,7 @@ ol li:first-child {
   line-height: 1.5em;
 }
 
-.company_address p span,
-.company_address p span a {
+.company_address p span, .company_address p span a {
   text-decoration: underline;
   color: #333;
   cursor: pointer;
@@ -1004,8 +710,7 @@ ol li:first-child {
   .wrap {
     width: 95%;
   }
-  .contact-form input[type="text"],
-  .contact-form textarea {
+  .contact-form input[type="text"], .contact-form textarea {
     width: 97%;
   }
 }
@@ -1016,8 +721,7 @@ ol li:first-child {
   .wrap {
     width: 95%;
   }
-  .contact-form input[type="text"],
-  .contact-form textarea {
+  .contact-form input[type="text"], .contact-form textarea {
     width: 92%;
   }
 }
@@ -1049,8 +753,7 @@ ol li:first-child {
   .right-content {
     width: 100%;
   }
-  .share-artical h3,
-  .artical-commentbox h3 {
+  .share-artical h3, .artical-commentbox h3 {
     font-size: 26px;
   }
 }
@@ -1072,8 +775,7 @@ ol li:first-child {
     width: 100%;
     padding: 0px 10px;
   }
-  .share-artical h3,
-  .artical-commentbox h3 {
+  .share-artical h3, .artical-commentbox h3 {
     font-size: 23px;
   }
   .share-artical ul li a {
@@ -1103,8 +805,7 @@ ol li:first-child {
   .right-content {
     width: 100%;
   }
-  .share-artical h3,
-  .artical-commentbox h3 {
+  .share-artical h3, .artical-commentbox h3 {
     font-size: 21px;
   }
 }
@@ -1119,4 +820,3 @@ ol li:first-child {
     padding-right: 7px;
   }
 }
-</style>

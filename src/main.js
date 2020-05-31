@@ -2,8 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router';
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import App from './App.vue'
-import ListingPage from './states/listing.vue'
-import VideoPlayer from './states/video-player.vue'
+import LecturesListing from './states/lectures-listing/lectures-listing.vue'
+import VideoPlayer from './states/video-player/video-player.vue'
 
 // Install BootstrapVue
 Vue.use(BootstrapVue)
@@ -20,9 +20,9 @@ Vue.config.productionTip = false
 
 const router = new Router({
   routes: [
-    { path: '/', component: ListingPage },
-    { path: '/video', component: VideoPlayer }
-  ] 
+    { path: '/', component: LecturesListing },
+    { path: '/video/:standard/:subject/:lecture', component: VideoPlayer },
+  ]
 })
 
 Vue.use(Router);
