@@ -23,24 +23,24 @@
               v-for="(value) in metaData"
               :key="value.name"
               :label="value.name"
-              :value="value"
+              :value="value.name"
             ></el-option>
           </el-select>
         </el-form-item>
-        <el-form-item label="Select Subject" prop="subjectsSelected">
-          <el-select v-model="formModel.subjectsSelected" placeholder="Select Subject">
+        <el-form-item label="Select Subject" prop="subjectSelected">
+          <el-select v-model="formModel.subjectSelected" placeholder="Select Subject">
             <el-option
-              v-for="(value) in formModel.classSelected.subjects"
+              v-for="(value) in classSelected.subjects"
               :key="value.name"
               :label="value.name"
-              :value="value"
+              :value="value.name"
             ></el-option>
           </el-select>
         </el-form-item>
-        <el-form-item>
+        <!-- <el-form-item>
           <el-button type="primary" @click="submitForm()">Submit</el-button>
           <el-button @click="clear()">Clear</el-button>
-        </el-form-item>
+        </el-form-item> -->
       </el-form>
     </el-card>
     <section class="mb-5">
@@ -54,10 +54,10 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-            <div v-show="!formModel.subjectsSelected.lectures">No Lectures found!!!</div>
+            <div v-show="!subjectSelected.lectures">No Lectures found!!!</div>
             <div
               class="row mb-3"
-              v-for="(value, key) in formModel.subjectsSelected.lectures"
+              v-for="(value, key) in subjectSelected.lectures"
               :key="key">
               <div class="col-md-12">
                 <div class="card">
@@ -68,7 +68,7 @@
                       </div>
                       <div class="col-md-7">
                         <h5>
-                          Class {{formModel.classSelected.name}} - {{formModel.subjectsSelected.name}} - Lecture {{value.lectureid}}
+                          Class {{classSelected.name}} - {{subjectSelected.name}} - Lecture {{value.lectureid}}
                         </h5>
                         <!-- <small>Jopitor Inc., India</small>
                         <p>
@@ -77,7 +77,7 @@
                       </div>
                       <div class="col-md-2">
                         <router-link
-                          :to="'/video/'+formModel.classSelected.name+'/'+formModel.subjectsSelected.name+'/'+value.lectureid"
+                          :to="'/video/'+classSelected.name+'/'+subjectSelected.name+'/'+value.lectureid"
                           v-slot="{ href, navigate }">
                           <a
                             class="btn btn-outline bg-orange"
