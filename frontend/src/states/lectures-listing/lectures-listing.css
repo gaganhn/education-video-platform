@@ -1,0 +1,18 @@
+.bg-orange {
+  background: #d8622b;
+  color: #fff !important;
+}
+
+img {
+  width: 100%;
+  max-height: 560px;
+}
+
+a {
+  color: #696969;
+}
+
+.background-fix {
+  background: linear-gradient(45deg, #54d400 56%, #1b1e21 100%);
+  color: #fff;
+}
